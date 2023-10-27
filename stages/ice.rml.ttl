@@ -1,0 +1,175 @@
+@base     <http://example.com/base/> .
+@prefix : <http://example.com/base/> .
+@prefix ex: <http://example.com/> .
+
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#>.
+@prefix fno: <https://w3id.org/function/ontology#>.
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wds: <http://www.wikidata.org/entity/statement/> .
+@prefix wdv: <http://www.wikidata.org/value/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix p: <http://www.wikidata.org/prop/> .
+@prefix ps: <http://www.wikidata.org/prop/statement/> .
+@prefix pq: <http://www.wikidata.org/prop/qualifier/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bd: <http://www.bigdata.com/rdf#> .
+
+@prefix cas: <https://commonchemistry.cas.org/detail?cas_rn=> .
+
+:ls a rml:LogicalSource;
+    rml:source "data-source/ice/Acute_Oral_Toxicity_Acute_Oral_Toxicity.parquet";
+    rml:referenceFormulation ql:CSV.
+
+<#casMap> rr:template "https://commonchemistry.cas.org/detail?cas_rn={CASRN}";
+    rr:class ex:ChemicalEntity .
+
+<TriplesMap1_RecordTopLevel> a rr:TriplesMap;
+
+  rml:logicalSource :ls;
+
+  rr:subjectMap [
+    rr:template "http://example.com/ICE/Record/{Record ID}";
+    rr:class ex:record
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ex:assay ;
+    rr:objectMap [ rml:reference "Assay" ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ex:routeOfAdministration ;
+    rr:objectMap [ rml:reference "Route" ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ex:species ;
+    rr:objectMap [
+      fnml:execution [
+          fnml:function ex:mapToSpecies;
+          fnml:input [
+            fnml:parameter grel:valueParam;
+            fnml:valueMap [ rml:reference "Species" ]
+          ]
+        ]
+    ]
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate ex:exposureResult ;
+    rr:objectMap <#NodeMap_Record_ID__CASRN>
+  ] .
+
+<#NodeMap_Record_ID__CASRN>
+      rr:template "http://example.com/ICE/RecordToExposureResult/{Record ID}{CASRN}";
+      rr:termType rr:IRI;
+  .
+<#NodeMap_Record_ID__CASRN_EndPoint>
+      rr:template "http://example.com/ICE/ExposureResult_to_EndPoint/{Record ID}{CASRN}{Endpoint}";
+      rr:termType rr:IRI;
+  .
+
+<TriplesMap2_ExposureResult> a rr:TriplesMap;
+  rml:logicalSource :ls;
+
+  rr:subjectMap <#NodeMap_Record_ID__CASRN>;
+
+  rr:predicateObjectMap [
+    rr:predicate ex:endPoint ;
+    rr:objectMap <#NodeMap_Record_ID__CASRN_EndPoint>
+  ].
+
+<TriplesMap_ExposureResultToEndPoint> a rr:TriplesMap;
+  rml:logicalSource :ls;
+
+  rr:subjectMap <#NodeMap_Record_ID__CASRN_EndPoint>;
+
+  rr:predicateObjectMap [
+    rr:predicate ex:endpointName ;
+    rr:objectMap [ rml:reference "Endpoint" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:endpointResponseModifier ;
+    rr:objectMap [ rml:reference "Response Modifier" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:endpointResponseValue ;
+    rr:objectMap [ rml:reference "Response" ]
+  ] ;
+  rr:predicateObjectMap [
+    rr:predicate ex:endpointResponseUnit ;
+    rr:objectMap [ rml:reference "Units" ]
+  ].
+
+
+
+<TriplesMap2_Formulation> a rr:TriplesMap;
+  rml:logicalSource [
+        rml:query """
+            SELECT *
+            FROM 'data-source/ice/Acute_Oral_Toxicity_Acute_Oral_Toxicity.parquet'
+            WHERE "Formulation ID" IS NOT NULL;
+        """
+    ];
+
+  rml:logicalSource :ls;
+
+  rr:subjectMap [
+    rr:template "http://example.com/ICE/Formulation/{Formulation ID}";
+    rr:class ex:formulation
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [ rml:reference "Formulation Name" ]
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate ex:formulation_component ;
+    rr:objectMap <#casMap>
+  ].
+
+# This needs to be part of the formulation component.
+###  rr:predicateObjectMap [
+###    rr:predicate ex:percentActive ;
+###    rr:objectMap [ rml:reference "Percent Active"; rr:datatype xsd:decimal ]
+###  ] ;
+
+<TriplesMap3_CAS_to_Chemical_Name> a rr:TriplesMap;
+  rml:logicalSource [
+        rml:query """
+            SELECT "CASRN", "Chemical Name"
+            FROM 'data-source/ice/Acute_Oral_Toxicity_Acute_Oral_Toxicity.parquet'
+            WHERE "Chemical Name" IS NOT NULL;
+        """
+    ];
+  rr:subjectMap <#casMap>;
+  rr:predicateObjectMap [
+    rr:predicate rdfs:label ;
+    rr:objectMap [ rml:reference "Chemical Name" ]
+  ].
+
+# <TriplesMap4_CAS_to_DTXSID> a rr:TriplesMap;
+#   rml:logicalSource [
+#         rml:query """
+#             SELECT "CASRN", "DTXSID"
+#             FROM 'data-source/ice/Acute_Oral_Toxicity_Acute_Oral_Toxicity.parquet'
+#             WHERE "DTXSID" IS NOT NULL;
+#         """
+#     ];
+#   rr:subjectMap <#casMap>;
+#   rr:predicateObjectMap [
+#     rr:predicate ex:DTXSID ;
+#     rr:objectMap [ rr:template "https://comptox.epa.gov/dashboard/chemical/details/{DTXSID}" ]
+#   ].
+
+
