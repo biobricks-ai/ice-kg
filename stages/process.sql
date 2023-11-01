@@ -14,9 +14,9 @@ COPY (
 		"Reference",
 		"URL"
 	FROM "data-source/ice/ADME_Parameters_ADME_Parameter.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/ADME_Parameters_ADME_Parameter.parquet"
+TO 'data-processed/ice/ADME_Parameters_ADME_Parameter.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -50,9 +50,9 @@ COPY (
 		"Record ID",
 		"PID"
 	FROM "data-source/ice/Acute_Dermal_Toxicity_Mixtures.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Acute_Dermal_Toxicity_Mixtures.parquet"
+TO 'data-processed/ice/Acute_Dermal_Toxicity_Mixtures.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -75,7 +75,7 @@ COPY (
 		"Min Weight (g)",
 		"Max Weight (g)",
 		"Curated LC50 (mg/L)",
-		"EPA Tox Cat",
+		" EPA Tox Cat",
 		"GHS Tox Cat",
 		"Exposure",
 		"Nominal Concentration (mg/L)",
@@ -90,9 +90,9 @@ COPY (
 		"Record ID",
 		"PID"
 	FROM "data-source/ice/Acute_Inhalation_Toxicity_Mixtures.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Acute_Inhalation_Toxicity_Mixtures.parquet"
+TO 'data-processed/ice/Acute_Inhalation_Toxicity_Mixtures.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -120,9 +120,9 @@ COPY (
 		"Formulation ID",
 		"Record ID"
 	FROM "data-source/ice/Acute_Oral_Toxicity_Acute_Oral_Toxicity.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Acute_Oral_Toxicity_Acute_Oral_Toxicity.parquet"
+TO 'data-processed/ice/Acute_Oral_Toxicity_Acute_Oral_Toxicity.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -155,9 +155,9 @@ COPY (
 		"PMID",
 		"URL"
 	FROM "data-source/ice/Cancer_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Cancer_Data.parquet"
+TO 'data-processed/ice/Cancer_Data.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -191,9 +191,9 @@ COPY (
 		"referenceurl",
 		"pubmedid"
 	FROM "data-source/ice/DART_Chemicals.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/DART_Chemicals.parquet"
+TO 'data-processed/ice/DART_Chemicals.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -224,9 +224,9 @@ COPY (
 		"Reference",
 		"Reference 2"
 	FROM "data-source/ice/Endocrine_Endocrine_In_vitro.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Endocrine_Endocrine_In_vitro.parquet"
+TO 'data-processed/ice/Endocrine_Endocrine_In_vitro.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -264,9 +264,9 @@ COPY (
 		"Reference",
 		"Reference 2"
 	FROM "data-source/ice/Endocrine_Endocrine_in_vivo.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Endocrine_Endocrine_in_vivo.parquet"
+TO 'data-processed/ice/Endocrine_Endocrine_in_vivo.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -282,9 +282,9 @@ COPY (
 		"Qsar Ready ID",
 		"Record ID"
 	FROM "data-source/ice/Eye_Irritation_Chemicals.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Eye_Irritation_Chemicals.parquet"
+TO 'data-processed/ice/Eye_Irritation_Chemicals.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -320,9 +320,9 @@ COPY (
 		"Record ID",
 		"PID"
 	FROM "data-source/ice/Eye_Irritation_Formulations.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Eye_Irritation_Formulations.parquet"
+TO 'data-processed/ice/Eye_Irritation_Formulations.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -355,9 +355,9 @@ COPY (
 		"Record ID",
 		"PID"
 	FROM "data-source/ice/Skin_Irritation_Formulations.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Skin_Irritation_Formulations.parquet"
+TO 'data-processed/ice/Skin_Irritation_Formulations.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -390,9 +390,9 @@ COPY (
 		"Formulation ID",
 		"Record ID"
 	FROM "data-source/ice/Skin_Irritation_Skin_Irritation-Corrosion.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Skin_Irritation_Skin_Irritation-Corrosion.parquet"
+TO 'data-processed/ice/Skin_Irritation_Skin_Irritation-Corrosion.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -426,9 +426,9 @@ COPY (
 		"referenceurl",
 		"pubmedid"
 	FROM "data-source/ice/Skin_Sensitization_Chemicals.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/Skin_Sensitization_Chemicals.parquet"
+TO 'data-processed/ice/Skin_Sensitization_Chemicals.parquet'
 (FORMAT 'parquet')
 ;
 
@@ -451,9 +451,9 @@ COPY (
 		"Reference",
 		"URL"
 	FROM "data-source/ice/cHTS2022_invitrodb34_20220302.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
-TO "data-processed/ice/cHTS2022_invitrodb34_20220302.parquet"
+TO 'data-processed/ice/cHTS2022_invitrodb34_20220302.parquet'
 (FORMAT 'parquet')
 ;
 
