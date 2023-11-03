@@ -1,0 +1,20 @@
+PREFIX rr: <http://www.w3.org/ns/r2rml#>
+PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
+
+PREFIX cheminf: <http://semanticscience.org/resource/CHEMINF_>
+
+CONSTRUCT {
+  []  a                 rr:TriplesMap;
+      rml:logicalSource ?ls;
+      rr:subjectMap [
+        rr:template "http://identifiers.org/cas/{CASRN}";
+        rr:class    cheminf:000000, cheminf:000446 ;
+      ]
+} WHERE
+{
+  ?tm a                 rr:TriplesMap;
+      rml:logicalSource ?ls;
+      rr:predicateObjectMap [
+        rr:objectMap [ rml:reference "CASRN" ]
+      ]
+}
