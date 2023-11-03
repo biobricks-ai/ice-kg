@@ -16,7 +16,7 @@ COPY (
 		"Reference",
 		"URL"
 	FROM "data-source/ice/ADME_Parameters_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/ADME_Parameters_Data.parquet'
 (FORMAT 'parquet')
@@ -35,7 +35,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/AcuteToxMOA_AcuteLethalityMOA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/AcuteToxMOA_AcuteLethalityMOA.parquet'
 (FORMAT 'parquet')
@@ -64,7 +64,7 @@ COPY (
 		"Response Unit",
 		"Reference"
 	FROM "data-source/ice/Acute_Dermal_Toxicity_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Acute_Dermal_Toxicity_Data.parquet'
 (FORMAT 'parquet')
@@ -114,7 +114,7 @@ COPY (
 		"Reference",
 		"URL"
 	FROM "data-source/ice/Acute_Inhalation_Toxicity_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Acute_Inhalation_Toxicity_Data.parquet'
 (FORMAT 'parquet')
@@ -144,7 +144,7 @@ COPY (
 		"Reference",
 		"URL"
 	FROM "data-source/ice/Acute_Oral_Toxicity_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Acute_Oral_Toxicity_Data.parquet'
 (FORMAT 'parquet')
@@ -163,7 +163,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/AndrogenMOA_AndrogenMOA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/AndrogenMOA_AndrogenMOA.parquet'
 (FORMAT 'parquet')
@@ -182,7 +182,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/CancerMOA_CancerMOA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/CancerMOA_CancerMOA.parquet'
 (FORMAT 'parquet')
@@ -218,7 +218,7 @@ COPY (
 		"Reference",
 		"URL"
 	FROM "data-source/ice/Cancer_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Cancer_Data.parquet'
 (FORMAT 'parquet')
@@ -237,7 +237,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/CardioToxMOA_CardioToxTMOA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/CardioToxMOA_CardioToxTMOA.parquet'
 (FORMAT 'parquet')
@@ -256,7 +256,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/CardioToxTMOA_CardioToxTMOA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/CardioToxTMOA_CardioToxTMOA.parquet'
 (FORMAT 'parquet')
@@ -268,7 +268,7 @@ COPY (
 		"Unnamed: 0",
 		"Unnamed: 1"
 	FROM "data-source/ice/ChemcialQC_Column_Descriptions.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/ChemcialQC_Column_Descriptions.parquet'
 (FORMAT 'parquet')
@@ -291,7 +291,7 @@ COPY (
 		"qc_NEW_spid",
 		"ncct_qc_simple"
 	FROM "data-source/ice/ChemcialQC_ICE_Chemical_QC.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/ChemcialQC_ICE_Chemical_QC.parquet'
 (FORMAT 'parquet')
@@ -304,7 +304,7 @@ COPY (
 		"Unnamed: 1",
 		"Unnamed: 2"
 	FROM "data-source/ice/ChemcialQC_Tox21_QC_descriptions.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/ChemcialQC_Tox21_QC_descriptions.parquet'
 (FORMAT 'parquet')
@@ -316,7 +316,7 @@ COPY (
 		"Unnamed: 0",
 		"Unnamed: 1"
 	FROM "data-source/ice/ChemicalQC_Column_Descriptions.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/ChemicalQC_Column_Descriptions.parquet'
 (FORMAT 'parquet')
@@ -337,7 +337,7 @@ COPY (
 		"NICEATM_qc_t4",
 		"NICEATM_qc_summary_call"
 	FROM "data-source/ice/ChemicalQC_cHTS_Chemical_QC_DATA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/ChemicalQC_cHTS_Chemical_QC_DATA.parquet'
 (FORMAT 'parquet')
@@ -350,7 +350,7 @@ COPY (
 		"Unnamed: 1",
 		"Unnamed: 2"
 	FROM "data-source/ice/ChemicalQC_cHTS_Chemical_QC_descriptions.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/ChemicalQC_cHTS_Chemical_QC_descriptions.parquet'
 (FORMAT 'parquet')
@@ -372,7 +372,7 @@ COPY (
 		"Reference",
 		"URL"
 	FROM "data-source/ice/Chemical_Functional_Use_Categories_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Chemical_Functional_Use_Categories_Data.parquet'
 (FORMAT 'parquet')
@@ -391,7 +391,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/DARTMOA_DARTMOA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/DARTMOA_DARTMOA.parquet'
 (FORMAT 'parquet')
@@ -423,7 +423,7 @@ COPY (
 		"PMID",
 		"URL"
 	FROM "data-source/ice/DART_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/DART_Data.parquet'
 (FORMAT 'parquet')
@@ -457,7 +457,7 @@ COPY (
 		"PMID",
 		"URL"
 	FROM "data-source/ice/Endocrine_In_Vitro_Endocrine.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Endocrine_In_Vitro_Endocrine.parquet'
 (FORMAT 'parquet')
@@ -500,7 +500,7 @@ COPY (
 		"URL",
 		"Additional Information"
 	FROM "data-source/ice/Endocrine_In_Vivo_Endocrine.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Endocrine_In_Vivo_Endocrine.parquet'
 (FORMAT 'parquet')
@@ -519,7 +519,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/EstrogenMOA_EstrogenMOA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/EstrogenMOA_EstrogenMOA.parquet'
 (FORMAT 'parquet')
@@ -542,7 +542,7 @@ COPY (
 		"Reference",
 		"URL"
 	FROM "data-source/ice/Exposure_Predictions_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Exposure_Predictions_Data.parquet'
 (FORMAT 'parquet')
@@ -574,7 +574,7 @@ COPY (
 		"PMID",
 		"URL"
 	FROM "data-source/ice/Eye_Irritation_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Eye_Irritation_Data.parquet'
 (FORMAT 'parquet')
@@ -609,7 +609,7 @@ COPY (
 		"Record ID",
 		"PID"
 	FROM "data-source/ice/Skin_Irritation_Formulations.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Skin_Irritation_Formulations.parquet'
 (FORMAT 'parquet')
@@ -644,7 +644,7 @@ COPY (
 		"Formulation ID",
 		"Record ID"
 	FROM "data-source/ice/Skin_Irritation_Skin_Irritation-Corrosion.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Skin_Irritation_Skin_Irritation-Corrosion.parquet'
 (FORMAT 'parquet')
@@ -677,7 +677,7 @@ COPY (
 		"PMID",
 		"URL"
 	FROM "data-source/ice/Skin_Sensitization_Data.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Skin_Sensitization_Data.parquet'
 (FORMAT 'parquet')
@@ -696,7 +696,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/SteroidMOA_SteroidMOA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/SteroidMOA_SteroidMOA.parquet'
 (FORMAT 'parquet')
@@ -715,7 +715,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/ThyroidMOA_ThyroidMOA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/ThyroidMOA_ThyroidMOA.parquet'
 (FORMAT 'parquet')
@@ -729,7 +729,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/Tox21MT_Tox21MT.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/Tox21MT_Tox21MT.parquet'
 (FORMAT 'parquet')
@@ -754,7 +754,7 @@ COPY (
 		"Reference",
 		"URL"
 	FROM "data-source/ice/cHTS2022_invitrodb34_20220302.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/cHTS2022_invitrodb34_20220302.parquet'
 (FORMAT 'parquet')
@@ -768,7 +768,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/cHTSMOA_Tox21MT.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/cHTSMOA_Tox21MT.parquet'
 (FORMAT 'parquet')
@@ -788,7 +788,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/cHTSMT_ALL_AllMTMOA.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/cHTSMT_ALL_AllMTMOA.parquet'
 (FORMAT 'parquet')
@@ -801,7 +801,7 @@ COPY (
 		"Old_AssayEndpointName",
 		"new_AssayName"
 	FROM "data-source/ice/cHTSMT_ALL_ChangedNames.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/cHTSMT_ALL_ChangedNames.parquet'
 (FORMAT 'parquet')
@@ -813,7 +813,7 @@ COPY (
 		"This workbook contains information on the annotation of the cHTS data updated for the ICE 3.6 release",
 		"Unnamed: 1"
 	FROM "data-source/ice/cHTSMT_ALL_Overview.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/cHTSMT_ALL_Overview.parquet'
 (FORMAT 'parquet')
@@ -830,7 +830,7 @@ COPY (
 		"Gene",
 		"Entrez Gene ID"
 	FROM "data-source/ice/cHTSMT_ALL_invitrodb34_AssayAnnotation.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/cHTSMT_ALL_invitrodb34_AssayAnnotation.parquet'
 (FORMAT 'parquet')
@@ -849,7 +849,7 @@ COPY (
 		"MT_NCIm_term",
 		"MT_NCIm_term_ID"
 	FROM "data-source/ice/cHTSMT_cHTSMT.parquet"
-	-- LIMIT 1000
+	LIMIT 1000
 )
 TO 'data-processed/ice/cHTSMT_cHTSMT.parquet'
 (FORMAT 'parquet')

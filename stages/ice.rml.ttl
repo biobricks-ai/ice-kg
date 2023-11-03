@@ -156,7 +156,7 @@ ex-base:TripleMap_Top_Acute_Dermal_Toxicity_Data
 ex-base:ls_CancerMOA_CancerMOA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/CancerMOA_CancerMOA.parquet" .
+        rml:source                "data-processed/ice/CancerMOA_CancerMOA.parquet" .
 
 ex-base:TripleMap_Top_EstrogenMOA_EstrogenMOA
         rdf:type               rr:TriplesMap;
@@ -195,12 +195,12 @@ ex-base:TripleMap_Top_EstrogenMOA_EstrogenMOA
 ex-base:ls_cHTSMOA_Tox21MT
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/cHTSMOA_Tox21MT.parquet" .
+        rml:source                "data-processed/ice/cHTSMOA_Tox21MT.parquet" .
 
 ex-base:ls_Skin_Irritation_Formulations
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Skin_Irritation_Formulations.parquet" .
+        rml:source                "data-processed/ice/Skin_Irritation_Formulations.parquet" .
 
 ex-base:TripleMap_Top_Acute_Inhalation_Toxicity_Data
         rdf:type               rr:TriplesMap;
@@ -332,7 +332,7 @@ ex-base:TripleMap_Top_Acute_Inhalation_Toxicity_Data
 ex-base:ls_Cancer_Data
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Cancer_Data.parquet" .
+        rml:source                "data-processed/ice/Cancer_Data.parquet" .
 
 ex-base:TripleMap_Top_Acute_Oral_Toxicity_Data
         rdf:type               rr:TriplesMap;
@@ -404,22 +404,22 @@ ex-base:TripleMap_Top_Acute_Oral_Toxicity_Data
 ex-base:ls_Skin_Sensitization_Data
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Skin_Sensitization_Data.parquet" .
+        rml:source                "data-processed/ice/Skin_Sensitization_Data.parquet" .
 
 ex-base:ls_Tox21MT_Tox21MT
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Tox21MT_Tox21MT.parquet" .
+        rml:source                "data-processed/ice/Tox21MT_Tox21MT.parquet" .
 
 ex-base:ls_EstrogenMOA_EstrogenMOA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/EstrogenMOA_EstrogenMOA.parquet" .
+        rml:source                "data-processed/ice/EstrogenMOA_EstrogenMOA.parquet" .
 
 ex-base:ls_SteroidMOA_SteroidMOA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/SteroidMOA_SteroidMOA.parquet" .
+        rml:source                "data-processed/ice/SteroidMOA_SteroidMOA.parquet" .
 
 ex-base:TripleMap_Top_SteroidMOA_SteroidMOA
         rdf:type               rr:TriplesMap;
@@ -458,12 +458,12 @@ ex-base:TripleMap_Top_SteroidMOA_SteroidMOA
 ex-base:ls_CardioToxMOA_CardioToxTMOA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/CardioToxMOA_CardioToxTMOA.parquet" .
+        rml:source                "data-processed/ice/CardioToxMOA_CardioToxTMOA.parquet" .
 
 ex-base:ls_CardioToxTMOA_CardioToxTMOA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/CardioToxTMOA_CardioToxTMOA.parquet" .
+        rml:source                "data-processed/ice/CardioToxTMOA_CardioToxTMOA.parquet" .
 
 ex-base:TripleMap_Top_ChemcialQC_ICE_Chemical_QC
         rdf:type               rr:TriplesMap;
@@ -591,7 +591,7 @@ ex-base:TripleMap_Top_AcuteToxMOA_AcuteLethalityMOA
 ex-base:ls_Endocrine_In_Vivo_Endocrine
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Endocrine_In_Vivo_Endocrine.parquet" .
+        rml:source                "data-processed/ice/Endocrine_In_Vivo_Endocrine.parquet" .
 
 ex-base:TripleMap_Top_cHTSMT_cHTSMT
         rdf:type               rr:TriplesMap;
@@ -630,12 +630,12 @@ ex-base:TripleMap_Top_cHTSMT_cHTSMT
 ex-base:ls_Acute_Dermal_Toxicity_Data
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Acute_Dermal_Toxicity_Data.parquet" .
+        rml:source                "data-processed/ice/Acute_Dermal_Toxicity_Data.parquet" .
 
 ex-base:ls_Eye_Irritation_Data
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Eye_Irritation_Data.parquet" .
+        rml:source                "data-processed/ice/Eye_Irritation_Data.parquet" .
 
 ex-base:TripleMap_Top_Skin_Sensitization_Data
         rdf:type               rr:TriplesMap;
@@ -893,7 +893,7 @@ ex-base:TripleMap_Top_cHTSMT_ALL_invitrodb34_AssayAnnotation
 
 ex-base:ls_DART_Data  rdf:type    rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/DART_Data.parquet" .
+        rml:source                "data-processed/ice/DART_Data.parquet" .
 
 ex-base:TripleMap_Top_DART_Data
         rdf:type               rr:TriplesMap;
@@ -971,27 +971,27 @@ ex-base:TripleMap_Top_DART_Data
 ex-base:ls_ChemicalQC_cHTS_Chemical_QC_DATA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/ChemicalQC_cHTS_Chemical_QC_DATA.parquet" .
+        rml:source                "data-processed/ice/ChemicalQC_cHTS_Chemical_QC_DATA.parquet" .
 
 ex-base:ls_cHTSMT_ALL_ChangedNames
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/cHTSMT_ALL_ChangedNames.parquet" .
+        rml:source                "data-processed/ice/cHTSMT_ALL_ChangedNames.parquet" .
 
 ex-base:ls_cHTSMT_ALL_AllMTMOA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/cHTSMT_ALL_AllMTMOA.parquet" .
+        rml:source                "data-processed/ice/cHTSMT_ALL_AllMTMOA.parquet" .
 
 ex-base:ls_Exposure_Predictions_Data
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Exposure_Predictions_Data.parquet" .
+        rml:source                "data-processed/ice/Exposure_Predictions_Data.parquet" .
 
 ex-base:ls_Acute_Inhalation_Toxicity_Data
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Acute_Inhalation_Toxicity_Data.parquet" .
+        rml:source                "data-processed/ice/Acute_Inhalation_Toxicity_Data.parquet" .
 
 ex-base:TripleMap_Top_cHTS2022_invitrodb34_20220302
         rdf:type               rr:TriplesMap;
@@ -1048,17 +1048,17 @@ ex-base:TripleMap_Top_cHTS2022_invitrodb34_20220302
 ex-base:ls_cHTS2022_invitrodb34_20220302
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/cHTS2022_invitrodb34_20220302.parquet" .
+        rml:source                "data-processed/ice/cHTS2022_invitrodb34_20220302.parquet" .
 
 ex-base:ls_ChemcialQC_ICE_Chemical_QC
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/ChemcialQC_ICE_Chemical_QC.parquet" .
+        rml:source                "data-processed/ice/ChemcialQC_ICE_Chemical_QC.parquet" .
 
 ex-base:ls_Endocrine_In_Vitro_Endocrine
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Endocrine_In_Vitro_Endocrine.parquet" .
+        rml:source                "data-processed/ice/Endocrine_In_Vitro_Endocrine.parquet" .
 
 ex-base:TripleMap_Top_AndrogenMOA_AndrogenMOA
         rdf:type               rr:TriplesMap;
@@ -1097,7 +1097,7 @@ ex-base:TripleMap_Top_AndrogenMOA_AndrogenMOA
 ex-base:ls_Skin_Irritation_Skin_Irritation-Corrosion
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Skin_Irritation_Skin_Irritation-Corrosion.parquet" .
+        rml:source                "data-processed/ice/Skin_Irritation_Skin_Irritation-Corrosion.parquet" .
 
 ex-base:TripleMap_Top_Eye_Irritation_Data
         rdf:type               rr:TriplesMap;
@@ -1175,7 +1175,7 @@ ex-base:TripleMap_Top_Eye_Irritation_Data
 ex-base:ls_ThyroidMOA_ThyroidMOA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/ThyroidMOA_ThyroidMOA.parquet" .
+        rml:source                "data-processed/ice/ThyroidMOA_ThyroidMOA.parquet" .
 
 ex-base:TripleMap_Top_ThyroidMOA_ThyroidMOA
         rdf:type               rr:TriplesMap;
@@ -1248,12 +1248,12 @@ ex-base:TripleMap_Top_CardioToxTMOA_CardioToxTMOA
 ex-base:ls_Acute_Oral_Toxicity_Data
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Acute_Oral_Toxicity_Data.parquet" .
+        rml:source                "data-processed/ice/Acute_Oral_Toxicity_Data.parquet" .
 
 ex-base:ls_cHTSMT_ALL_invitrodb34_AssayAnnotation
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/cHTSMT_ALL_invitrodb34_AssayAnnotation.parquet" .
+        rml:source                "data-processed/ice/cHTSMT_ALL_invitrodb34_AssayAnnotation.parquet" .
 
 ex-base:TripleMap_Top_DARTMOA_DARTMOA
         rdf:type               rr:TriplesMap;
@@ -1545,7 +1545,7 @@ ex-base:TripleMap_Top_cHTSMT_ALL_ChangedNames
 ex-base:ls_cHTSMT_cHTSMT
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/cHTSMT_cHTSMT.parquet" .
+        rml:source                "data-processed/ice/cHTSMT_cHTSMT.parquet" .
 
 ex-base:TripleMap_Top_Skin_Irritation_Skin_Irritation-Corrosion
         rdf:type               rr:TriplesMap;
@@ -1666,7 +1666,7 @@ ex-base:TripleMap_Top_CardioToxMOA_CardioToxTMOA
 ex-base:ls_AndrogenMOA_AndrogenMOA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/AndrogenMOA_AndrogenMOA.parquet" .
+        rml:source                "data-processed/ice/AndrogenMOA_AndrogenMOA.parquet" .
 
 ex-base:TripleMap_Top_ChemicalQC_cHTS_Chemical_QC_DATA
         rdf:type               rr:TriplesMap;
@@ -1730,7 +1730,7 @@ ex-base:TripleMap_Top_cHTSMOA_Tox21MT
 ex-base:ls_DARTMOA_DARTMOA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/DARTMOA_DARTMOA.parquet" .
+        rml:source                "data-processed/ice/DARTMOA_DARTMOA.parquet" .
 
 ex-base:TripleMap_Top_CancerMOA_CancerMOA
         rdf:type               rr:TriplesMap;
@@ -1769,7 +1769,7 @@ ex-base:TripleMap_Top_CancerMOA_CancerMOA
 ex-base:ls_ADME_Parameters_Data
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/ADME_Parameters_Data.parquet" .
+        rml:source                "data-processed/ice/ADME_Parameters_Data.parquet" .
 
 ex-base:TripleMap_Top_cHTSMT_ALL_AllMTMOA
         rdf:type               rr:TriplesMap;
@@ -1811,9 +1811,9 @@ ex-base:TripleMap_Top_cHTSMT_ALL_AllMTMOA
 ex-base:ls_AcuteToxMOA_AcuteLethalityMOA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/AcuteToxMOA_AcuteLethalityMOA.parquet" .
+        rml:source                "data-processed/ice/AcuteToxMOA_AcuteLethalityMOA.parquet" .
 
 ex-base:ls_Chemical_Functional_Use_Categories_Data
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
-        rml:source                "data-source/ice/Chemical_Functional_Use_Categories_Data.parquet" .
+        rml:source                "data-processed/ice/Chemical_Functional_Use_Categories_Data.parquet" .
