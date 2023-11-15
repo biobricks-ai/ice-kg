@@ -1,0 +1,83 @@
+schema: '2.0'
+stages:
+  bb_path:
+    cmd: stages/00_bb_path.sh
+    deps:
+    - path: stages/00_bb_path.sh
+      hash: md5
+      md5: 95ea70fdb9bd633b46bd834c6e75d994
+      size: 453
+    outs:
+    - path: data-source/brick-manifest
+      hash: md5
+      md5: b7ba1b1b3d724c449fe3acf6418cf541
+      size: 77
+  preprocess:
+    cmd: stages/01_preprocess.sh
+    deps:
+    - path: stages/01_preprocess.sh
+      hash: md5
+      md5: 20f1a8d33c119c62a723f03f94bda371
+      size: 315
+    - path: stages/process.sql
+      hash: md5
+      md5: a71d745b07dbb5c2d13bf689a4078ced
+      size: 16537
+    outs:
+    - path: data-processed
+      hash: md5
+      md5: a810c3f22cf6eb52e9070ef89aaf75fb.dir
+      size: 81529294
+      nfiles: 37
+  rml:
+    cmd: stages/02_rml.sh
+    deps:
+    - path: data-processed
+      hash: md5
+      md5: a810c3f22cf6eb52e9070ef89aaf75fb.dir
+      size: 81529294
+      nfiles: 37
+    - path: data-source/brick-manifest
+      hash: md5
+      md5: b7ba1b1b3d724c449fe3acf6418cf541
+      size: 77
+    - path: stages/02_rml.sh
+      hash: md5
+      md5: 768ea0b779055fc94dbe0dec647ccb91
+      size: 438
+    - path: stages/ice-udfs.py
+      hash: md5
+      md5: 5550e10685c80bf316b5ed6156617cce
+      size: 349
+    - path: stages/ice.ini
+      hash: md5
+      md5: d2647c37bde36a4fe890208a0e3affa2
+      size: 157
+    - path: stages/ice.rml.ttl
+      hash: md5
+      md5: e2b87a0ecf44cbac130f32cc29621986
+      size: 105731
+    outs:
+    - path: raw
+      hash: md5
+      md5: f50f511e5dc3fea861ffbba90ecf1cdf.dir
+      size: 7228350031
+      nfiles: 1
+  build:
+    cmd: stages/03_build.sh
+    deps:
+    - path: raw
+      hash: md5
+      md5: f50f511e5dc3fea861ffbba90ecf1cdf.dir
+      size: 7228350031
+      nfiles: 1
+    - path: stages/03_build.sh
+      hash: md5
+      md5: a132fdd9f69bfe3bc1335d3d8ac46831
+      size: 417
+    outs:
+    - path: brick
+      hash: md5
+      md5: 76d823ea67d612824dd82b7710a7265d.dir
+      size: 620813052
+      nfiles: 2

@@ -14,14 +14,16 @@ stages:
     deps:
       - stages/00_bb_path.sh
     outs:
-      - data-source/brick-manifest
+      - 'data-source/brick-manifest':
+          push: false
   preprocess:
     cmd: stages/01_preprocess.sh
     deps:
       - stages/01_preprocess.sh
       - stages/process.sql
     outs:
-      - data-processed
+      - data-processed:
+          push: false
   rml:
     cmd: stages/02_rml.sh
     deps:
@@ -32,7 +34,8 @@ stages:
       - stages/ice.rml.ttl
       - stages/ice-udfs.py
     outs:
-      - raw
+      - raw:
+          push: false
   build:
     cmd: stages/03_build.sh
     deps:
