@@ -1,0 +1,1819 @@
+@prefix ex:      <http://example.com/> .
+@prefix ex-base: <http://example.com/base/> .
+@prefix fnml:    <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno:     <https://w3id.org/function/ontology#> .
+@prefix grel:    <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix ql:      <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml:     <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr:      <http://www.w3.org/ns/r2rml#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema> .
+
+ex-base:TripleMap_Top_Endocrine_In_Vitro_Endocrine
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Endocrine_In_Vitro_Endocrine;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Modifier" ];
+                                 rr:predicate  ex:response_modifier
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Converted Response Unit" ];
+                                 rr:predicate  ex:converted_response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "PMID" ];
+                                 rr:predicate  ex:pmid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reported Response" ];
+                                 rr:predicate  ex:reported_response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Conversion Factor" ];
+                                 rr:predicate  ex:conversion_factor
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Converted Response" ];
+                                 rr:predicate  ex:converted_response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Conversion Factor Source" ];
+                                 rr:predicate  ex:conversion_factor_source
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reported Response Unit" ];
+                                 rr:predicate  ex:reported_response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Conversion Factor Value" ];
+                                 rr:predicate  ex:conversion_factor_value
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reported Response Modifier" ];
+                                 rr:predicate  ex:reported_response_modifier
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Mixture" ];
+                                 rr:predicate  ex:mixture
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Endocrine_In_Vitro_Endocrine/record_id/{Record ID}"
+                               ] .
+
+ex-base:TripleMap_Top_Acute_Dermal_Toxicity_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Acute_Dermal_Toxicity_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Modifier" ];
+                                 rr:predicate  ex:response_modifier
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation Name" ];
+                                 rr:predicate  ex:formulation_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Percent Active Ingredient" ];
+                                 rr:predicate  ex:percent_active_ingredient
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Mixture" ];
+                                 rr:predicate  ex:mixture
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation ID" ];
+                                 rr:predicate  ex:formulation_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Route" ];
+                                 rr:predicate  ex:route
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Acute_Dermal_Toxicity_Data/record_id/{Record ID}/formulation_id/{Formulation ID}"
+                               ] .
+
+ex-base:ls_CancerMOA_CancerMOA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/CancerMOA_CancerMOA.parquet" .
+
+ex-base:TripleMap_Top_EstrogenMOA_EstrogenMOA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_EstrogenMOA_EstrogenMOA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/EstrogenMOA_EstrogenMOA/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:ls_cHTSMOA_Tox21MT
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/cHTSMOA_Tox21MT.parquet" .
+
+ex-base:ls_Skin_Irritation_Formulations
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Skin_Irritation_Formulations.parquet" .
+
+ex-base:TripleMap_Top_Acute_Inhalation_Toxicity_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Acute_Inhalation_Toxicity_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Product Vehicle" ];
+                                 rr:predicate  ex:product_vehicle
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Conc Test Substance" ];
+                                 rr:predicate  ex:conc_test_substance
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Mixture" ];
+                                 rr:predicate  ex:mixture
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Duration" ];
+                                 rr:predicate  ex:duration
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "GSD" ];
+                                 rr:predicate  ex:gsd
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Min Weight (g)" ];
+                                 rr:predicate  <http://example.com/min_weight_(g)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Min Age (weeks)" ];
+                                 rr:predicate  <http://example.com/min_age_(weeks)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Administration" ];
+                                 rr:predicate  ex:administration
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Guideline" ];
+                                 rr:predicate  ex:guideline
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Gross Pathology" ];
+                                 rr:predicate  ex:gross_pathology
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Nominal Concentration (mg/L)" ];
+                                 rr:predicate  <http://example.com/nominal_concentration_(mg/l)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MMAD (um)" ];
+                                 rr:predicate  <http://example.com/mmad_(um)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Clinical Observations" ];
+                                 rr:predicate  ex:clinical_observations
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Test Material Form" ];
+                                 rr:predicate  ex:test_material_form
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Sex" ];
+                                 rr:predicate  ex:sex
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation ID" ];
+                                 rr:predicate  ex:formulation_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Exposure Type" ];
+                                 rr:predicate  ex:exposure_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Percent Active Ingredient" ];
+                                 rr:predicate  ex:percent_active_ingredient
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Strain" ];
+                                 rr:predicate  ex:strain
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Limit Test" ];
+                                 rr:predicate  ex:limit_test
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Test" ];
+                                 rr:predicate  ex:test
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Death" ];
+                                 rr:predicate  ex:death
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation Name" ];
+                                 rr:predicate  ex:formulation_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Max Weight (g)" ];
+                                 rr:predicate  <http://example.com/max_weight_(g)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Max Age (weeks)" ];
+                                 rr:predicate  <http://example.com/max_age_(weeks)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Dose Gravimetric Concentration (mg/L)" ];
+                                 rr:predicate  <http://example.com/dose_gravimetric_concentration_(mg/l)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Acute_Inhalation_Toxicity_Data/record_id/{Record ID}/formulation_id/{Formulation ID}"
+                               ] .
+
+ex-base:ls_Cancer_Data
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Cancer_Data.parquet" .
+
+ex-base:TripleMap_Top_Acute_Oral_Toxicity_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Acute_Oral_Toxicity_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Percent Active Ingredient" ];
+                                 rr:predicate  ex:percent_active_ingredient
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation Name" ];
+                                 rr:predicate  ex:formulation_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Mixture" ];
+                                 rr:predicate  ex:mixture
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation ID" ];
+                                 rr:predicate  ex:formulation_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Sex" ];
+                                 rr:predicate  ex:sex
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Modifier" ];
+                                 rr:predicate  ex:response_modifier
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Acute_Oral_Toxicity_Data/record_id/{Record ID}/formulation_id/{Formulation ID}"
+                               ] .
+
+ex-base:ls_Skin_Sensitization_Data
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Skin_Sensitization_Data.parquet" .
+
+ex-base:ls_Tox21MT_Tox21MT
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Tox21MT_Tox21MT.parquet" .
+
+ex-base:ls_EstrogenMOA_EstrogenMOA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/EstrogenMOA_EstrogenMOA.parquet" .
+
+ex-base:ls_SteroidMOA_SteroidMOA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/SteroidMOA_SteroidMOA.parquet" .
+
+ex-base:TripleMap_Top_SteroidMOA_SteroidMOA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_SteroidMOA_SteroidMOA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/SteroidMOA_SteroidMOA/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:ls_CardioToxMOA_CardioToxTMOA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/CardioToxMOA_CardioToxTMOA.parquet" .
+
+ex-base:ls_CardioToxTMOA_CardioToxTMOA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/CardioToxTMOA_CardioToxTMOA.parquet" .
+
+ex-base:TripleMap_Top_ChemcialQC_ICE_Chemical_QC
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_ChemcialQC_ICE_Chemical_QC;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "qc_NEW_spid" ];
+                                 rr:predicate  ex:qc_new_spid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "chid" ];
+                                 rr:predicate  ex:chid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "spid" ];
+                                 rr:predicate  ex:spid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "pubchem_sid" ];
+                                 rr:predicate  ex:pubchem_sid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ncgc_id" ];
+                                 rr:predicate  ex:ncgc_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "qc_NEW" ];
+                                 rr:predicate  ex:qc_new
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "qc_t0_simple" ];
+                                 rr:predicate  ex:qc_t0_simple
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "qc_t4_simple" ];
+                                 rr:predicate  ex:qc_t4_simple
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ncct_qc_description" ];
+                                 rr:predicate  ex:ncct_qc_description
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ncct_qc" ];
+                                 rr:predicate  ex:ncct_qc
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "qc_t4" ];
+                                 rr:predicate  ex:qc_t4
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ncct_qc_simple" ];
+                                 rr:predicate  ex:ncct_qc_simple
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "tox21_id" ];
+                                 rr:predicate  ex:tox21_id
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/ChemcialQC_ICE_Chemical_QC/tox21_id/{tox21_id}/ncgc_id/{ncgc_id}/spid/{spid}"
+                               ] .
+
+ex-base:TripleMap_Top_Chemical_Functional_Use_Categories_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Chemical_Functional_Use_Categories_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Chemical_Functional_Use_Categories_Data/record_id/{Record ID}"
+                               ] .
+
+ex-base:TripleMap_Top_AcuteToxMOA_AcuteLethalityMOA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_AcuteToxMOA_AcuteLethalityMOA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/AcuteToxMOA_AcuteLethalityMOA/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:ls_Endocrine_In_Vivo_Endocrine
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Endocrine_In_Vivo_Endocrine.parquet" .
+
+ex-base:TripleMap_Top_cHTSMT_cHTSMT
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_cHTSMT_cHTSMT;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/cHTSMT_cHTSMT/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:ls_Acute_Dermal_Toxicity_Data
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Acute_Dermal_Toxicity_Data.parquet" .
+
+ex-base:ls_Eye_Irritation_Data
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Eye_Irritation_Data.parquet" .
+
+ex-base:TripleMap_Top_Skin_Sensitization_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Skin_Sensitization_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation Name" ];
+                                 rr:predicate  ex:formulation_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "PMID" ];
+                                 rr:predicate  ex:pmid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Mixture" ];
+                                 rr:predicate  ex:mixture
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Route" ];
+                                 rr:predicate  ex:route
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation ID" ];
+                                 rr:predicate  ex:formulation_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Percent Active Ingredient" ];
+                                 rr:predicate  ex:percent_active_ingredient
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Concentration" ];
+                                 rr:predicate  ex:concentration
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Concentration Units" ];
+                                 rr:predicate  ex:concentration_units
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Modifier" ];
+                                 rr:predicate  ex:response_modifier
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Skin_Sensitization_Data/record_id/{Record ID}/formulation_id/{Formulation ID}"
+                               ] .
+
+ex-base:TripleMap_Top_Tox21MT_Tox21MT
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Tox21MT_Tox21MT;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Tox21MT_Tox21MT/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:TripleMap_Top_Exposure_Predictions_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Exposure_Predictions_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "5th percentile (mg/kg/day)" ];
+                                 rr:predicate  <http://example.com/5th_percentile_(mg/kg/day)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "General Pathway" ];
+                                 rr:predicate  ex:general_pathway
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "50th percentile (mg/kg/day)" ];
+                                 rr:predicate  <http://example.com/50th_percentile_(mg/kg/day)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "95th percentile (mg/kg/day)" ];
+                                 rr:predicate  <http://example.com/95th_percentile_(mg/kg/day)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Specific Pathway" ];
+                                 rr:predicate  ex:specific_pathway
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Exposure_Predictions_Data/dtxsid/{DTXSID}"
+                               ] .
+
+ex-base:TripleMap_Top_Cancer_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Cancer_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Sex" ];
+                                 rr:predicate  ex:sex
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Route" ];
+                                 rr:predicate  ex:route
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Strain" ];
+                                 rr:predicate  ex:strain
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Level.of.Evidence" ];
+                                 rr:predicate  ex:level.of.evidence
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Location" ];
+                                 rr:predicate  ex:location
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Percent.Active.Ingredient" ];
+                                 rr:predicate  ex:percent.active.ingredient
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response.Unit" ];
+                                 rr:predicate  ex:response.unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation.ID" ];
+                                 rr:predicate  ex:formulation.id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data.Type" ];
+                                 rr:predicate  ex:data.type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record.ID" ];
+                                 rr:predicate  ex:record.id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical.Name" ];
+                                 rr:predicate  ex:chemical.name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Lesion.(Incidence)" ];
+                                 rr:predicate  <http://example.com/lesion.(incidence)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data.Name" ];
+                                 rr:predicate  ex:data.name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data.Version" ];
+                                 rr:predicate  ex:data.version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation.Name" ];
+                                 rr:predicate  ex:formulation.name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Tissue" ];
+                                 rr:predicate  ex:tissue
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Mixture" ];
+                                 rr:predicate  ex:mixture
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Lesion" ];
+                                 rr:predicate  ex:lesion
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Cancer_Data/record.id/{Record.ID}/formulation.id/{Formulation.ID}"
+                               ] .
+
+ex-base:TripleMap_Top_cHTSMT_ALL_invitrodb34_AssayAnnotation
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_cHTSMT_ALL_invitrodb34_AssayAnnotation;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Entrez Gene ID" ];
+                                 rr:predicate  ex:entrez_gene_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Invitro Assay Format" ];
+                                 rr:predicate  ex:invitro_assay_format
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Gene" ];
+                                 rr:predicate  ex:gene
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay Source" ];
+                                 rr:predicate  ex:assay_source
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Tissue" ];
+                                 rr:predicate  ex:tissue
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/cHTSMT_ALL_invitrodb34_AssayAnnotation/assay/{Assay}"
+                               ] .
+
+ex-base:ls_DART_Data  rdf:type    rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/DART_Data.parquet" .
+
+ex-base:TripleMap_Top_DART_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_DART_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "PMID" ];
+                                 rr:predicate  ex:pmid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Lifestage" ];
+                                 rr:predicate  ex:lifestage
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Study ID" ];
+                                 rr:predicate  ex:study_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Sex" ];
+                                 rr:predicate  ex:sex
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Unified Medical Language System" ];
+                                 rr:predicate  ex:unified_medical_language_system
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Critical Effect" ];
+                                 rr:predicate  ex:critical_effect
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Route" ];
+                                 rr:predicate  ex:route
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Strain" ];
+                                 rr:predicate  ex:strain
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/DART_Data/record_id/{Record ID}"
+                               ] .
+
+ex-base:ls_ChemicalQC_cHTS_Chemical_QC_DATA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/ChemicalQC_cHTS_Chemical_QC_DATA.parquet" .
+
+ex-base:ls_cHTSMT_ALL_ChangedNames
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/cHTSMT_ALL_ChangedNames.parquet" .
+
+ex-base:ls_cHTSMT_ALL_AllMTMOA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/cHTSMT_ALL_AllMTMOA.parquet" .
+
+ex-base:ls_Exposure_Predictions_Data
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Exposure_Predictions_Data.parquet" .
+
+ex-base:ls_Acute_Inhalation_Toxicity_Data
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Acute_Inhalation_Toxicity_Data.parquet" .
+
+ex-base:TripleMap_Top_cHTS2022_invitrodb34_20220302
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_cHTS2022_invitrodb34_20220302;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Curve Flag Description" ];
+                                 rr:predicate  ex:curve_flag_description
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "RecordID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "TestRange" ];
+                                 rr:predicate  ex:test_range
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ResponseUnit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "TestRange.Unit" ];
+                                 rr:predicate  ex:test_range.unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ChemicalName" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DatasetName" ];
+                                 rr:predicate  ex:dataset_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical QC Description" ];
+                                 rr:predicate  ex:chemical_qc_description
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/cHTS2022_invitrodb34_20220302/record_id/{RecordID}"
+                               ] .
+
+ex-base:ls_cHTS2022_invitrodb34_20220302
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/cHTS2022_invitrodb34_20220302.parquet" .
+
+ex-base:ls_ChemcialQC_ICE_Chemical_QC
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/ChemcialQC_ICE_Chemical_QC.parquet" .
+
+ex-base:ls_Endocrine_In_Vitro_Endocrine
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Endocrine_In_Vitro_Endocrine.parquet" .
+
+ex-base:TripleMap_Top_AndrogenMOA_AndrogenMOA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_AndrogenMOA_AndrogenMOA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/AndrogenMOA_AndrogenMOA/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:ls_Skin_Irritation_Skin_Irritation-Corrosion
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Skin_Irritation_Skin_Irritation-Corrosion.parquet" .
+
+ex-base:TripleMap_Top_Eye_Irritation_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Eye_Irritation_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation ID" ];
+                                 rr:predicate  ex:formulation_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Percent Active Ingredient" ];
+                                 rr:predicate  ex:percent_active_ingredient
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Mixture" ];
+                                 rr:predicate  ex:mixture
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "PMID" ];
+                                 rr:predicate  ex:pmid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Concentration" ];
+                                 rr:predicate  ex:concentration
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation Name" ];
+                                 rr:predicate  ex:formulation_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Concentration Units" ];
+                                 rr:predicate  ex:concentration_units
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Modifier" ];
+                                 rr:predicate  ex:response_modifier
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Eye_Irritation_Data/record_id/{Record ID}/formulation_id/{Formulation ID}"
+                               ] .
+
+ex-base:ls_ThyroidMOA_ThyroidMOA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/ThyroidMOA_ThyroidMOA.parquet" .
+
+ex-base:TripleMap_Top_ThyroidMOA_ThyroidMOA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_ThyroidMOA_ThyroidMOA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/ThyroidMOA_ThyroidMOA/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:TripleMap_Top_CardioToxTMOA_CardioToxTMOA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_CardioToxTMOA_CardioToxTMOA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/CardioToxTMOA_CardioToxTMOA/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:ls_Acute_Oral_Toxicity_Data
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Acute_Oral_Toxicity_Data.parquet" .
+
+ex-base:ls_cHTSMT_ALL_invitrodb34_AssayAnnotation
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/cHTSMT_ALL_invitrodb34_AssayAnnotation.parquet" .
+
+ex-base:TripleMap_Top_DARTMOA_DARTMOA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_DARTMOA_DARTMOA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/DARTMOA_DARTMOA/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:TripleMap_Top_ADME_Parameters_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_ADME_Parameters_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/ADME_Parameters_Data/record_id/{Record ID}"
+                               ] .
+
+ex-base:TripleMap_Top_Skin_Irritation_Formulations
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Skin_Irritation_Formulations;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Dose" ];
+                                 rr:predicate  ex:dose
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "No. Positive 72hr" ];
+                                 rr:predicate  ex:no._positive_72hr
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Dose Unit" ];
+                                 rr:predicate  ex:dose_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Test Material Form" ];
+                                 rr:predicate  ex:test_material_form
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "PID" ];
+                                 rr:predicate  ex:pid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Product Name" ];
+                                 rr:predicate  ex:product_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "No. Positive 1 hr" ];
+                                 rr:predicate  ex:no._positive_1_hr
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Clinical Observations" ];
+                                 rr:predicate  ex:clinical_observations
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "No. Tested  48 hr" ];
+                                 rr:predicate  ex:no._tested__48_hr
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "EPA Tox Cat" ];
+                                 rr:predicate  ex:epa_tox_cat
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Active Ingredient" ];
+                                 rr:predicate  ex:active_ingredient
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Strain" ];
+                                 rr:predicate  ex:strain
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Percent Active Ingredient" ];
+                                 rr:predicate  ex:percent_active_ingredient
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Sex" ];
+                                 rr:predicate  ex:sex
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "PII PDI" ];
+                                 rr:predicate  ex:pii_pdi
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "No. Positive 48hr" ];
+                                 rr:predicate  ex:no._positive_48hr
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "GHS Tox Cat" ];
+                                 rr:predicate  ex:ghs_tox_cat
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "No. Positive 24hr" ];
+                                 rr:predicate  ex:no._positive_24hr
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "No. Tested 72 hr" ];
+                                 rr:predicate  ex:no._tested_72_hr
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "No. Tested 24 hr" ];
+                                 rr:predicate  ex:no._tested_24_hr
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "No. Tested 1 hr" ];
+                                 rr:predicate  ex:no._tested_1_hr
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Skin_Irritation_Formulations/record_id/{Record ID}/pid/{PID}"
+                               ] .
+
+ex-base:TripleMap_Top_Endocrine_In_Vivo_Endocrine
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Endocrine_In_Vivo_Endocrine;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference Hormone Dose" ];
+                                 rr:predicate  ex:reference_hormone_dose
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Additional Information" ];
+                                 rr:predicate  ex:additional_information
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Mixture" ];
+                                 rr:predicate  ex:mixture
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Maximum Dose Units" ];
+                                 rr:predicate  ex:maximum_dose_units
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Strain" ];
+                                 rr:predicate  ex:strain
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Age at First Dose" ];
+                                 rr:predicate  ex:age_at_first_dose
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Treatment Duration" ];
+                                 rr:predicate  ex:treatment_duration
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "PMID" ];
+                                 rr:predicate  ex:pmid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Age Ovariectomized or Castrated" ];
+                                 rr:predicate  ex:age_ovariectomized_or_castrated
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Time Elapsed Between Surgery and Treatment" ];
+                                 rr:predicate  ex:time_elapsed_between_surgery_and_treatment
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Route" ];
+                                 rr:predicate  ex:route
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference Hormone Route" ];
+                                 rr:predicate  ex:reference_hormone_route
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Time Elapsed Between Last Dose and Necropsy" ];
+                                 rr:predicate  ex:time_elapsed_between_last_dose_and_necropsy
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Number of Doses Tested" ];
+                                 rr:predicate  ex:number_of_doses_tested
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reported Strain" ];
+                                 rr:predicate  ex:reported_strain
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Sex" ];
+                                 rr:predicate  ex:sex
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Maximum Dose" ];
+                                 rr:predicate  ex:maximum_dose
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference Hormone" ];
+                                 rr:predicate  ex:reference_hormone
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference Hormone Dose Units" ];
+                                 rr:predicate  ex:reference_hormone_dose_units
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Endocrine_In_Vivo_Endocrine/record_id/{Record ID}"
+                               ] .
+
+ex-base:TripleMap_Top_cHTSMT_ALL_ChangedNames
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_cHTSMT_ALL_ChangedNames;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "new_AssayName" ];
+                                 rr:predicate  ex:new_assay_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Old_AssayEndpointName" ];
+                                 rr:predicate  ex:old_assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "aeid" ];
+                                 rr:predicate  ex:aeid
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/cHTSMT_ALL_ChangedNames/aeid/{aeid}/old_assay_endpoint_name/{Old_AssayEndpointName}/new_assay_name/{new_AssayName}"
+                               ] .
+
+ex-base:ls_cHTSMT_cHTSMT
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/cHTSMT_cHTSMT.parquet" .
+
+ex-base:TripleMap_Top_Skin_Irritation_Skin_Irritation-Corrosion
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_Skin_Irritation_Skin_Irritation-Corrosion;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Laboratory" ];
+                                 rr:predicate  ex:laboratory
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Run Number" ];
+                                 rr:predicate  ex:run_number
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "240 min Viability (%)" ];
+                                 rr:predicate  <http://example.com/240_min_viability_(%25)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Sex" ];
+                                 rr:predicate  ex:sex
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "60 min Viability (%)" ];
+                                 rr:predicate  <http://example.com/60_min_viability_(%25)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "3 min Viability (%)" ];
+                                 rr:predicate  <http://example.com/3_min_viability_(%25)>
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Units" ];
+                                 rr:predicate  ex:units
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Modifier" ];
+                                 rr:predicate  ex:response_modifier
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "PMID" ];
+                                 rr:predicate  ex:pmid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Route" ];
+                                 rr:predicate  ex:route
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation me" ];
+                                 rr:predicate  ex:formulation_me
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Mixtures" ];
+                                 rr:predicate  ex:mixtures
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Formulation ID" ];
+                                 rr:predicate  ex:formulation_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Percent Active" ];
+                                 rr:predicate  ex:percent_active
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/Skin_Irritation_Skin_Irritation-Corrosion/formulation_id/{Formulation ID}/record_id/{Record ID}"
+                               ] .
+
+ex-base:TripleMap_Top_CardioToxMOA_CardioToxTMOA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_CardioToxMOA_CardioToxTMOA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/CardioToxMOA_CardioToxTMOA/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:ls_AndrogenMOA_AndrogenMOA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/AndrogenMOA_AndrogenMOA.parquet" .
+
+ex-base:TripleMap_Top_ChemicalQC_cHTS_Chemical_QC_DATA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_ChemicalQC_cHTS_Chemical_QC_DATA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "NICEATM_qc_t4" ];
+                                 rr:predicate  ex:niceatm_qc_t4
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "casrn" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "NICEATM_qc_t0" ];
+                                 rr:predicate  ex:niceatm_qc_t0
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "tox21_id" ];
+                                 rr:predicate  ex:tox21_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "tox21_qc_t4" ];
+                                 rr:predicate  ex:tox21_qc_t4
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "chem_type" ];
+                                 rr:predicate  ex:chem_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "dtxsid" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "tox21_qc_t0" ];
+                                 rr:predicate  ex:tox21_qc_t0
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ncgc_id" ];
+                                 rr:predicate  ex:ncgc_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "chemical_name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "NICEATM_qc_summary_call" ];
+                                 rr:predicate  ex:niceatm_qc_summary_call
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/ChemicalQC_cHTS_Chemical_QC_DATA/ncgc_id/{ncgc_id}/tox21_id/{tox21_id}"
+                               ] .
+
+ex-base:TripleMap_Top_cHTSMOA_Tox21MT
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_cHTSMOA_Tox21MT;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/cHTSMOA_Tox21MT/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:ls_DARTMOA_DARTMOA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/DARTMOA_DARTMOA.parquet" .
+
+ex-base:TripleMap_Top_CancerMOA_CancerMOA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_CancerMOA_CancerMOA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "AssayEndpointName" ];
+                                 rr:predicate  ex:assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/CancerMOA_CancerMOA/assay_endpoint_name/{AssayEndpointName}"
+                               ] .
+
+ex-base:ls_ADME_Parameters_Data
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/ADME_Parameters_Data.parquet" .
+
+ex-base:TripleMap_Top_cHTSMT_ALL_AllMTMOA
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_cHTSMT_ALL_AllMTMOA;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ModeofAction" ];
+                                 rr:predicate  ex:modeof_action
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MOA" ];
+                                 rr:predicate  ex:assay_moa
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "old_AssayEndpointName" ];
+                                 rr:predicate  ex:old_assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "ToxicityEndpoint" ];
+                                 rr:predicate  ex:toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "new_AssayEndpointName" ];
+                                 rr:predicate  ex:new_assay_endpoint_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MOA_ToxicityEndpoint" ];
+                                 rr:predicate  ex:moa_toxicity_endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term" ];
+                                 rr:predicate  ex:mt_nc_im_term
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay_MechanisticTarget" ];
+                                 rr:predicate  ex:assay_mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MechanisticTarget" ];
+                                 rr:predicate  ex:mechanistic_target
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "MT_NCIm_term_ID" ];
+                                 rr:predicate  ex:mt_nc_im_term_id
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/cHTSMT_ALL_AllMTMOA/new_assay_endpoint_name/{new_AssayEndpointName}/old_assay_endpoint_name/{old_AssayEndpointName}"
+                               ] .
+
+ex-base:ls_AcuteToxMOA_AcuteLethalityMOA
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/AcuteToxMOA_AcuteLethalityMOA.parquet" .
+
+ex-base:ls_Chemical_Functional_Use_Categories_Data
+        rdf:type                  rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/Chemical_Functional_Use_Categories_Data.parquet" .
