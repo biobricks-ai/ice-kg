@@ -891,83 +891,6 @@ ex-base:TripleMap_Top_cHTSMT_ALL_invitrodb34_AssayAnnotation
                                  rr:template  "http://example.com/ice/cHTSMT_ALL_invitrodb34_AssayAnnotation/assay/{Assay}"
                                ] .
 
-ex-base:ls_DART_Data  rdf:type    rml:LogicalSource;
-        rml:referenceFormulation  ql:CSV;
-        rml:source                "data-processed/ice/DART_Data.parquet" .
-
-ex-base:TripleMap_Top_DART_Data
-        rdf:type               rr:TriplesMap;
-        rml:logicalSource      ex-base:ls_DART_Data;
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
-                                 rr:predicate  ex:record_id
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "PMID" ];
-                                 rr:predicate  ex:pmid
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
-                                 rr:predicate  ex:endpoint
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
-                                 rr:predicate  ex:reference
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Lifestage" ];
-                                 rr:predicate  ex:lifestage
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Study ID" ];
-                                 rr:predicate  ex:study_id
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
-                                 rr:predicate  ex:response_unit
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
-                                 rr:predicate  ex:data_type
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Sex" ];
-                                 rr:predicate  ex:sex
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
-                                 rr:predicate  ex:dtxsid
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
-                                 rr:predicate  ex:casrn
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Unified Medical Language System" ];
-                                 rr:predicate  ex:unified_medical_language_system
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Critical Effect" ];
-                                 rr:predicate  ex:critical_effect
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
-                                 rr:predicate  ex:url
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
-                                 rr:predicate  ex:data_version
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Route" ];
-                                 rr:predicate  ex:route
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
-                                 rr:predicate  ex:assay
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
-                                 rr:predicate  ex:chemical_name
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
-                                 rr:predicate  ex:response
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
-                                 rr:predicate  ex:data_name
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Strain" ];
-                                 rr:predicate  ex:strain
-                               ];
-        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
-                                 rr:predicate  ex:species
-                               ];
-        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
-                                 rr:template  "http://example.com/ice/DART_Data/record_id/{Record ID}"
-                               ] .
-
 ex-base:ls_ChemicalQC_cHTS_Chemical_QC_DATA
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
@@ -1817,3 +1740,83 @@ ex-base:ls_Chemical_Functional_Use_Categories_Data
         rdf:type                  rml:LogicalSource;
         rml:referenceFormulation  ql:CSV;
         rml:source                "data-processed/ice/Chemical_Functional_Use_Categories_Data.parquet" .
+
+ex-base:TripleMap_Top_DART_Data
+        rdf:type               rr:TriplesMap;
+        rml:logicalSource      ex-base:ls_DART_Data;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "CASRN" ];
+                                 rr:predicate  ex:casrn
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response" ];
+                                 rr:predicate  ex:response
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Reference" ];
+                                 rr:predicate  ex:reference
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "URL" ];
+                                 rr:predicate  ex:url
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Sex" ];
+                                 rr:predicate  ex:sex
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Strain" ];
+                                 rr:predicate  ex:strain
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Species" ];
+                                 rr:predicate  ex:species
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Study ID" ];
+                                 rr:predicate  ex:study_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Unified Medical Language System" ];
+                                 rr:predicate  ex:unified_medical_language_system
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "PMID" ];
+                                 rr:predicate  ex:pmid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "_ROW_NUMBER" ];
+                                 rr:predicate  ex:_row_number
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Endpoint" ];
+                                 rr:predicate  ex:endpoint
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Critical Effect" ];
+                                 rr:predicate  ex:critical_effect
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "DTXSID" ];
+                                 rr:predicate  ex:dtxsid
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Lifestage" ];
+                                 rr:predicate  ex:lifestage
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Type" ];
+                                 rr:predicate  ex:data_type
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Route" ];
+                                 rr:predicate  ex:route
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Response Unit" ];
+                                 rr:predicate  ex:response_unit
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Record ID" ];
+                                 rr:predicate  ex:record_id
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Assay" ];
+                                 rr:predicate  ex:assay
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Chemical Name" ];
+                                 rr:predicate  ex:chemical_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Name" ];
+                                 rr:predicate  ex:data_name
+                               ];
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "Data Version" ];
+                                 rr:predicate  ex:data_version
+                               ];
+        rr:subjectMap          [ rr:class     ex:chem-gene-ixn;
+                                 rr:template  "http://example.com/ice/DART_Data/record_id/{Record ID}/dtxsid/{DTXSID}"
+                               ] .
+
+ex-base:ls_DART_Data  rdf:type    rml:LogicalSource;
+        rml:referenceFormulation  ql:CSV;
+        rml:source                "data-processed/ice/DART_Data.parquet" .
